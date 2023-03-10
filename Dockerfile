@@ -5,6 +5,10 @@ LABEL maintainer="Walid Behlock <behlocks@gmail.com>"
 ADD ./icecast.xml /etc/icecast2
 ADD icecast.conf /etc/nginx/conf.d/icecast.conf
 
+ADD  ./certs/* /etc/ssl/certs
+
+RUN update-ca-certificates
+
 EXPOSE 8000:8000
 
 RUN apt-get -qq -y update; \
