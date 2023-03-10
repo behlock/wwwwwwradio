@@ -27,7 +27,7 @@
         <relay-password>aracecar12345</relay-password>
 
         <!-- Admin logs in with the username given below -->
-        <admin-user>behloc</admin-user>
+        <admin-user>behlock</admin-user>
         <admin-password>aracecar9099</admin-password>
     </authentication>
 
