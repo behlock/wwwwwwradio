@@ -77,10 +77,10 @@
         <tls>1</tls>
     </listen-socket>
 
-    <listen-socket>
+    <!-- <listen-socket>
         <port>443</port>
         <tls>1</tls>
-    </listen-socket>
+    </listen-socket> -->
 
     <!-- Global header settings
          Headers defined here will be returned for every HTTP request to Icecast.
