@@ -6,7 +6,7 @@
         <queue-size>524288</queue-size>
         <client-timeout>30</client-timeout>
         <header-timeout>15</header-timeout>
-        <source-timeout>10</source-timeout>
+        <source-timeout>20</source-timeout>
         <!-- If enabled, this will provide a burst of data when a client 
              first connects, thereby significantly reducing the startup 
              time for listeners that do substantial buffering. However,
@@ -65,6 +65,11 @@
 
     <listen-socket>
         <port>8000</port>
+        <tls>1</tls>
+    </listen-socket>
+
+    <listen-socket>
+        <port>443</port>
         <tls>1</tls>
     </listen-socket>
    
