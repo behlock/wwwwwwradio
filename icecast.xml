@@ -22,7 +22,7 @@
         <!-- Global maximum number of clients.
              This includes all kinds of clients, not only listeners.
         -->
-        <clients>100</clients>
+        <clients>10</clients>
         <sources>2</sources>
         <queue-size>524288</queue-size>
         <client-timeout>30</client-timeout>
@@ -67,21 +67,20 @@
     <!-- You may have multiple <listen-socket> elements -->
     <listen-socket>
         <port>8000</port>
+        <tls>1</tls>
         <!-- <bind-address>127.0.0.1</bind-address> -->
         <!-- <shoutcast-mount>/stream</shoutcast-mount> -->
     </listen-socket>
-    <!--
-    <listen-socket>
-        <port>8080</port>
-    </listen-socket>
-    -->
-    <!--
+
     <listen-socket>
         <port>8443</port>
-        <tls>auto_no_plain</tls>
+        <tls>1</tls>
     </listen-socket>
-    -->
 
+    <listen-socket>
+        <port>443</port>
+        <tls>1</tls>
+    </listen-socket>
 
     <!-- Global header settings
          Headers defined here will be returned for every HTTP request to Icecast.
