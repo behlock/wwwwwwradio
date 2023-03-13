@@ -67,6 +67,7 @@
 
     <listen-socket>
         <port>443</port>
+        <tls>1</tls>
     </listen-socket>
    
     <!--<master-server>127.0.0.1</master-server>-->
