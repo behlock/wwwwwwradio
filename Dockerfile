@@ -2,7 +2,7 @@ FROM centos:7
 LABEL maintainer="Walid Behlock <behlocks@gmail.com>"
 
 RUN yum -y update && yum clean all
-RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm
+RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 RUN yum -y install icecast
 
 ADD ./icecast.xml /etc/icecast.xml
