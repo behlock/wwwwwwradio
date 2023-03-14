@@ -1,4 +1,7 @@
-# ICECAST
+ARG ICECAST_SOURCE_PASSWORD
+ARG ICECAST_ADMIN_PASSWORD
+ARG ICECAST_PASSWORD
+ARG ICECAST_RELAY_PASSWORD
+ARG ICECAST_HOSTNAME
+
 FROM moul/icecast
-LABEL maintainer="Walid Behlock <behlocks@gmail.com>"
-ADD ./icecast.xml /etc/icecast2

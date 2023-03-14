@@ -1,3 +1,10 @@
+setup:
+  config:
+    ICECAST_SOURCE_PASSWORD: aracecar123
+    ICECAST_ADMIN_PASSWORD: aracecar9099
+    ICECAST_PASSWORD: aracecarontheroad
+    ICECAST_RELAY_PASSWORD: aracecar12345
+    ICECAST_HOSTNAME: radio.behlock.xyz
 build:
   docker:
     web: Dockerfile
